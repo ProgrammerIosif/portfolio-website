@@ -1,0 +1,27 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+  font-family:Poppins ;
+}
+
+#root {
+  background-image: url('https://tailwindcss.com/_next/static/media/hero-dark@90.dba36cdf.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#navbar{
+  /* From https://css.glass */
+  background: rgba(120, 70, 130, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+}
+
