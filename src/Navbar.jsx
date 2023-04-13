@@ -20,7 +20,7 @@ export default function Navbar() {
            path:'/contact',
            img:'https://cdn-icons-png.flaticon.com/512/2767/2767188.png'}].map(item =>
             <Link to={item.path}>
-              <div className={`h-12 w-12 grid place-items-center rounded-full hover:invert xs:h-16 xs:w-16
+              <div className={`h-14 w-14 grid place-items-center rounded-full hover:invert xs:h-16 xs:w-16
                               ${location.pathname === item.path ? 'bg-gradient-to-r from-green-700 to-yellow-600 invert shadow-inner shadow-gray-600' : ''}`}>
                 <img src={item.img} alt={item.title} width='36' height='36'/>
               </div>
