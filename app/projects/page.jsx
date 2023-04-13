@@ -1,6 +1,8 @@
-import weatherApp from '../assets/weatherApp.png'
-import wordPressClone from '../assets/wordPressClone.png'
-import calculatorul from '../assets/calculatorul.png'
+import Image from 'next/image'
+
+import weatherApp from '../../public/weatherApp.png'
+import wordPressClone from '../../public/wordPressClone.png'
+import calculatorul from '../../public/calculatorul.png'
 
 export default function Projects() {
   return (
@@ -25,7 +27,7 @@ export default function Projects() {
            live:'https://programmeriosif.github.io/calculatorul'}].map(project =>
             <div className='group relative overflow-hidden border border-accent rounded-xl min-h-fit aspect-[1920/1080]'>
               <div className='group-hover:bg-black/70 group-active:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
-              <img src={project.img} alt="" className='group-hover:scale-125 transition-all duration-500'/>
+              <Image src={project.img} alt="" className='group-hover:scale-125 transition-all duration-500'/>
               <div className='absolute uppercase text-2xl font-semibold -bottom-full left-12 group-hover:bottom-32 group-active:bottom-36 transition-all duration-500 z-20'>
                 {project.title}
               </div>

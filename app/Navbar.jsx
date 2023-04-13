@@ -1,7 +1,11 @@
-import { Link, useLocation } from "react-router-dom"
+'use client'
+
+import Link from 'next/link'
+import {usePathname} from 'next/navigation'
 
 export default function Navbar() {
-  const location = useLocation();
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <div className="fixed mx-0 w-full bottom-0 flex justify-center bg-transparent z-50
                                 md:bottom-12">
@@ -19,9 +23,9 @@ export default function Navbar() {
           {title:'contact',
            path:'/contact',
            img:'https://cdn-icons-png.flaticon.com/512/2767/2767188.png'}].map(item =>
-            <Link to={item.path}>
+            <Link href={item.path}>
               <div className={`h-14 w-14 grid place-items-center rounded-full hover:invert xs:h-16 xs:w-16
-                              ${location.pathname === item.path ? 'bg-gradient-to-r from-green-700 to-yellow-600 invert shadow-inner shadow-gray-600' : ''}`}>
+                              ${pathname === item.path ? 'bg-gradient-to-r from-green-700 to-yellow-600 invert shadow-inner shadow-gray-600' : ''}`}>
                 <img src={item.img} alt={item.title} width='36' height='36'/>
               </div>
             </Link>)}
