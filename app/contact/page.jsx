@@ -1,3 +1,5 @@
+import Form from "./Form"
+
 export default function Contact() {
   return (
     <div id="contact" className="h-[100vh] text-primary grid place-items-center max-w-[1400px] px-4 xl:px-8 overflow-scroll pt-5 md:max-lg:pb-20 w-full">
@@ -17,12 +19,7 @@ export default function Contact() {
             <p className="text-xl xs:text-2xl 2xl:text-4xl group-hover:text-accent">Iosif-Ioan Buliga</p>
           </a>
         </div>
-        <form className="p-8 rounded-lg border border-accent text-xl max-lg:max-w-lg">
-          <input type="text" name="" placeholder="Name" className="bg-transparent border-b border-primary py-3 outline-none w-full placeholder:text-primary text-accent focus:border-accent transition-all"/>
-          <input type="text" name="" placeholder="Email" className="bg-transparent border-b border-primary py-3 outline-none w-full placeholder:text-primary text-accent focus:border-accent transition-all"/>
-          <textarea rows="" cols="" placeholder="Message" spellCheck="false" className="bg-transparent border-b border-primary py-12 mb-12 outline-none w-full placeholder:text-primary text-accent focus:border-accent transition-all resize-none"></textarea>
-          <button className="h-10 w-28 rounded-xl uppercase text-xl text-primary border border-primary font-bold hover:text-accent hover:border-accent hover:border-2">Send</button>
-        </form>
+        <Form />
       </div>
     </div>
   )
