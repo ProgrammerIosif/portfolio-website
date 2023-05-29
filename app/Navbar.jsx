@@ -5,9 +5,8 @@ import {usePathname} from 'next/navigation'
 
 export default function Navbar() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
-    <div className="fixed mx-0 w-full bottom-0 flex justify-center bg-transparent z-50
+    <nav className="fixed mx-0 w-full bottom-0 flex justify-center bg-transparent z-50
                                 md:bottom-12">
       <div id="navbar" className="w-full flex justify-around px-3.5 py-2.5
                       md:w-80 md:rounded-full">
@@ -30,6 +29,6 @@ export default function Navbar() {
               </div>
             </Link>)}
       </div>
-    </div>
+    </nav>
   )
 }
