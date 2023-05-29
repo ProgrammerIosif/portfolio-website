@@ -13,14 +13,14 @@ export default function Projects() {
         <h1 className="text-5xl uppercase w-full text-center font-semibold mt-5
                        xs:text-7xl
                        md:col-span-2 xl:col-span-3">Projects</h1>
-        {[{title:'Weather App',
-           img:weatherApp,
-           repo:'https://github.com/programmeriosif/weather-app',
-           live:'https://weather-app-eta-tan.vercel.app'},
-          {title:'WordPress Clone',
+        {[{title:'WordPress Clone',
            img:wordPressClone,
            repo:'https://github.com/programmeriosif/word-push',
            live:'https://word-push.vercel.app'},
+          {title:'Weather App',
+           img:weatherApp,
+           repo:'https://github.com/programmeriosif/weather-app',
+           live:'https://weather-app-eta-tan.vercel.app'},
           {title:'Presentation Site',
            img:calculatorul,
            repo:'https://github.com/programmeriosif/calculatorul',
@@ -52,8 +52,3 @@ export default function Projects() {
     </div>
   )
 }
-
-//wordpress clone
-//weather app
-//calculatorul
-//matrix manipulator
