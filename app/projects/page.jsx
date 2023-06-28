@@ -15,11 +15,11 @@ export default function Projects() {
       <PageTransition />
       <div id="projects" className="max-w-[3000px] h-full text-accent pb-16 xs:pb-20 overflow-auto
                md:pb-40 xl:flex xl:items-center">
-        <div className="flex flex-wrap gap-10 px-10 pb-10
-               md:grid md:grid-cols-2 md:pb-0">
+        <div className="flex flex-wrap gap-10 px-10 pb-10 md:max-lg:px-24
+               lg:grid lg:grid-cols-2 lg:pb-0">
           <h1 className="text-5xl uppercase w-full text-center font-semibold mt-5
                          xs:text-7xl
-                         md:col-span-2 xl:col-span-3">Projects</h1>
+                         lg:col-span-2">Projects</h1>
           {[{title:'BeatsXchange',
             img:beatsxchange,
             repo:'https://github.com/programmeriosif/beatsXchange',
@@ -36,9 +36,9 @@ export default function Projects() {
              img:calculatorul,
              repo:'https://github.com/programmeriosif/calculatorul',
              live:'https://programmeriosif.github.io/calculatorul'}].map(project =>
-              <div className='group relative overflow-hidden border border-accent rounded-xl min-h-fit aspect-[1920/1080]'>
+              <div className='group lg:max-w-[32rem] relative overflow-hidden border border-accent rounded-xl min-h-fit aspect-[1920/1080]'>
                 <div className='group-hover:bg-black/70 group-active:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
-                <Image src={project.img} alt="" className='max-w-[30vw] group-hover:scale-125 transition-all duration-500'/>
+                <Image src={project.img} alt="" className='group-hover:scale-125 transition-all duration-500'/>
                 <div className='absolute uppercase text-2xl font-semibold -bottom-full left-12 group-hover:bottom-32 group-active:bottom-36 transition-all duration-500 z-20'>
                   {project.title}
                 </div>
