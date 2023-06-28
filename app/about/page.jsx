@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <PageTransition />
-      <div id="about" className="h-[100vh] text-primary grid place-items-center max-w-[1400px] px-10 overflow-scroll pt-5 md:max-lg:pb-20 w-full">
+      <div id="about" className="h-[100vh] text-primary grid place-items-center max-w-[1400px] px-10 overflow-auto pt-5 md:max-lg:pb-20 w-full">
         <div className="grid gap-20 pb-24 lg:grid-cols-2">
           <div>
             <h1 className="text-accent text-5xl font-bold mb-2 lg:mb-6

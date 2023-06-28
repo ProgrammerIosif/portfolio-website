@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <PageTransition />
-      <div id="home" className="text-primary h-full grid place-items-center w-full overflow-scroll md:max-xl:pb-20">
+      <div id="home" className="text-primary h-full grid place-items-center w-full overflow-auto md:max-xl:pb-20">
         {/*desktop*/}
         <div className="max-xl:hidden flex gap-20 mb-5 mx-5">
           <div className="flex flex-col justify-center w-max">

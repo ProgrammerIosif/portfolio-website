@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <>
       <PageTransition />
-      <div id="contact" className="h-[100vh] text-primary grid place-items-center max-w-[1400px] px-4 xl:px-8 overflow-scroll pt-5 md:max-lg:pb-20 w-full">
+      <div id="contact" className="h-[100vh] text-primary grid place-items-center max-w-[1400px] px-4 xl:px-8 overflow-auto pt-5 md:max-lg:pb-20 w-full">
         <div className="grid gap-8 2xl:gap-20 pb-24 lg:grid-cols-2">
           <div className="flex flex-col gap-10">
             <h1 className="text-5xl 2xl:text-7xl font-semibold uppercase text-accent">contact</h1>
