@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 import PageTransition from '../PageTransition'
@@ -7,7 +5,6 @@ import PageTransition from '../PageTransition'
 import beatsxchange from '@/public/beatsxchange.png'
 import weatherApp from '@/public/weatherApp.png'
 import wordPressClone from '@/public/wordPressClone.png'
-import calculatorul from '@/public/calculatorul.png'
 
 export default function Projects() {
   return (
@@ -31,11 +28,7 @@ export default function Projects() {
             {title:'Weather App',
              img:weatherApp,
              repo:'https://github.com/programmeriosif/weather-app',
-             live:'https://weather-app-eta-tan.vercel.app'},
-            {title:'Presentation Site',
-             img:calculatorul,
-             repo:'https://github.com/programmeriosif/calculatorul',
-             live:'https://programmeriosif.github.io/calculatorul'}].map(project =>
+             live:'https://weather-app-eta-tan.vercel.app'}].map(project =>
               <div className='group lg:max-w-[32rem] relative overflow-hidden border border-accent rounded-xl min-h-fit aspect-[1920/1080]'>
                 <div className='group-hover:bg-black/70 group-active:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
                 <Image src={project.img} alt="" className='group-hover:scale-125 transition-all duration-500'/>

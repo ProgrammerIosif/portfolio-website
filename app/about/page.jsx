@@ -13,7 +13,7 @@ export default function About() {
                            xl:text-6xl">
               ABOUT ME
             </h1>
-            <p className="text-xl indent-10">I am a passionate, hard-working entry-level <b>front-end web developer</b>. My aim is to make people's lives better & easier by creating beautiful and useful software. As a developer, I am constantly seeking new challenges and opportunities to <b>learn</b> and <b>grow</b>. I enjoy staying up to date with the latest industry trends and exploring emerging technologies. Overall, I am excited about the opportunity to apply my skills and contribute to a dynamic and innovative team. I am eager to take on new challenges and am confident in my ability to create engaging applications.</p>
+            <p className="text-xl indent-10">I am a passionate, hard-working entry-level <b>front-end web developer</b>. My aim is to make people's lives better & easier by creating beautiful and useful software. As a developer, I am constantly seeking new challenges and opportunities to <b>learn</b> and <b>grow</b>. I enjoy staying up to date with the latest industry trends and exploring emerging technologies. Overall, I am excited about the opportunity to apply my skills and contribute to a dynamic and innovative team. I am eager to take on new challenges and I am confident in my ability to create engaging applications.</p>
           </div>
           <div className="flex flex-col gap-5 xl:pr-2">
             <h2 className="text-5xl text-accent font-bold xl:text-6xl">SKILLS AND TOOLS</h2>
@@ -41,7 +41,7 @@ export default function About() {
             <div className="flex flex-wrap gap-2 items-center text-accent">
               <h3 className="text-3xl font-semibold mr-2 xl:text-5xl">OTHERS</h3>
                 {[{name:'Prisma',
-                   img:'https://img.icons8.com/?size=512&id=aqb9SdV9P8oC&format=svg'},
+                   img:'https://imgs.search.brave.com/dvw9-RU7yC3STgN8xuwpOtznz8bUdeZJZzwP5VU2OL8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/aWNvbi5jb20vZnJl/ZS1pY29uLWRvd25s/b2FkL3ByaXNtYV8x/LnN2Zw.svg'},
                   {name:'MongoDB',
                    img:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'},
                   {name:'C++',

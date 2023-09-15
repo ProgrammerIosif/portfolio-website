@@ -1,5 +1,3 @@
-'use client'
-
 import PageTransition from './PageTransition'
 
 import Image from 'next/image'
@@ -13,12 +11,8 @@ export default function Home() {
         {/*desktop*/}
         <div className="max-xl:hidden flex gap-20 mb-5 mx-5">
           <div className="flex flex-col justify-center w-max">
-            <div className='relative text-7xl w-20 h-20 bg-accent rounded-full text-black font-mono mb-4'>
-              <p className='absolute top-1.5 left-2'>J</p>
-              <p className='absolute top-3.5 left-6'>J</p>
-            </div>
             <p className='text-xl 2xl:text-2xl'>Hi, there! I am</p>
-            <h1 id="name" className="text-accent text-7xl 2xl:text-8xl uppercase mb-4 font-bold">Iosif-Ioan Buliga</h1>
+            <h1 id="name" className="text-accent text-7xl 2xl:text-8xl uppercase my-2 font-bold">Iosif-Ioan Buliga</h1>
             <p className="text-2xl 2xl:text-3xl line">I'm an entry-level <b>front-end web developer</b><br/>and I love creating beautiful and functional websites!</p>
             <div className='flex gap-4 pt-5 items-center'>
               <a href='resume.pdf' target='_blank' className='text-4xl hover:-translate-y-1 transition-all hover:animate-pulse bg-accent text-black font-extrabold p-2 rounded'>RESUME</a>
@@ -34,7 +28,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Image id='profileImg' src={profileImg} height='450' width='450' className='rounded-full'/>
+          <Image id='profileImg' src={profileImg} height='420' width='420' className='rounded-full'/>
         </div>
         {/*mobile*/}
         <div className='xl:hidden flex flex-col items-center mb-20 mt-1'>

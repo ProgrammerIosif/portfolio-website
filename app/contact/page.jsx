@@ -1,5 +1,3 @@
-'use client'
-
 import PageTransition from "../PageTransition"
 import Form from "./Form"
 
