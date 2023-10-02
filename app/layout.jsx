@@ -1,5 +1,6 @@
 import './globals.css'
 import Navbar from './Navbar'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Poppins } from 'next/font/google'
 const font = Poppins({ subsets: ['latin'], weight: ['400','500','600'] })
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
           {children}
           <Navbar/>
         </div>
+        <Analytics/>
       </body>
     </html>
   )
