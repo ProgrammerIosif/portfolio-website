@@ -1,17 +1,9 @@
-'use client'
-
-import { useState, useEffect } from "react"
 import Link from "next/link"
 import PageTransition from "../PageTransition"
 import matter from "gray-matter"
 
-export default function Blog() {
-  const [posts, setPosts] = useState([])
-  const [isLoading, setLoading] = useState(false)
-
-  useEffect(() => {
-    setLoading(true)
-    fetch(`https://api.github.com/repos/programmeriosif/blog/contents`)
+export default async function Blog() {
+  const posts = await fetch(`https://api.github.com/repos/programmeriosif/blog/contents`, { cache: 'no-store' })
       .then(response => response.json())
       .then(async data => {
         const promises = data.map(async file => {
@@ -19,13 +11,9 @@ export default function Blog() {
           const { data, content } = matter(postContent)
           return {data, slug: file.name.replace(/\.[^/.]+$/, ''), body: content }
         })
-        const posts = await Promise.all(promises).then(data => data)
-        setPosts(posts)
-        setLoading(false)
+        return Promise.all(promises).then(data => data)
       })
-  }, [])
 
-  if (isLoading) return
   return (
     <>
       <PageTransition/>

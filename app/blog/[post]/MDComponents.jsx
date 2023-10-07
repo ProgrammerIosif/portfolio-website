@@ -18,7 +18,7 @@ export const mdxComponents = {
     return <p {...props} className='text-lg my-1.5'>{children}</p>
   },
   li: ({ children, ...props}) => {
-    return <li {...props} className='text-lg my-1.5'>{children}</li>
+    return <li {...props} className='text-lg my-1.5'>-{children}</li>
   },
   strong: ({ children, ...props}) => {
     return <strong {...props} className='text-accent'>{children}</strong>
@@ -29,5 +29,8 @@ export const mdxComponents = {
         {children}
       </Code>
     )
+  },
+  a: ({ children, ...props}) => {
+    return <a {...props} target='_blank'>{children}</a>
   },
 }

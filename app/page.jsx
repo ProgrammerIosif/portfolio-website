@@ -28,12 +28,26 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <Image id='profileImg' src={profileImg} height='420' width='420' className='rounded-full'/>
+          <Image
+            loading='eager'
+            alt='profile image'
+            id='profileImg'
+            src={profileImg}
+            height='400'
+            width='400'
+            className='rounded-full'/>
         </div>
         {/*mobile*/}
         <div className='xl:hidden flex flex-col items-center mb-20 mt-1'>
-          <Image id='profileImg' src={profileImg} height='300' width='300' className='rounded-full'/>
-          <p className='text-2xl mt-2'>Hi, there! I am</p>
+          <Image
+            loading='eager'
+            alt='profile image'
+            id='profileImg'
+            src={profileImg}
+            height='300'
+            width='300'
+            className='rounded-full'/>
+          <p className='text-2xl mt-6'>Hi, there! I am</p>
           <h1 id="name" className="text-accent text-center text-5xl uppercase mb-2 px-2 font-bold">Iosif-Ioan Buliga</h1>
           <p className="text-2xl px-2 text-center max-w-2xl">I'm an entry-level <span className='text-accent font-black'>front-end web developer</span> and I love creating beautiful and functional websites!</p>
           <div className='flex gap-4 pt-2 items-center'>
