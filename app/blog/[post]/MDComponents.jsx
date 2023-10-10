@@ -1,12 +1,13 @@
 import { Code } from 'bright'
 import Image from 'next/image'
+import { fileIcons } from "@/app/extension"
 
 export const mdxComponents = {
   img: ({ props }) => {
     return <Image {...props} />
   },
   blockquote: ({children, ...props}) => {
-    return <blockquote cite="Next.js Blog" className='bg-[#0d1117] my-5 p-5 rounded' {...props}>{children}</blockquote>
+    return <blockquote className='bg-[#0d1117] my-5 p-5 rounded' {...props}>{children}</blockquote>
   },
   h1: ({ children, ...props}) => {
     return <h1 {...props} className='text-3xl md:text-4xl text-accent pb-1 font-bold'>{children}</h1>
@@ -25,12 +26,17 @@ export const mdxComponents = {
   },
   pre: ({ children, ...props }) => {
     return (
-      <Code {...props} theme='github-dark'>
+      <Code
+        theme='github-dark'
+        lineNumbers='true'
+        extensions={[fileIcons]}
+        {...props}
+      >
         {children}
       </Code>
     )
   },
   a: ({ children, ...props}) => {
-    return <a {...props} target='_blank'>{children}</a>
+    return <a {...props} target='_blank' className='underline inline-block hover:scale-105 transition ease-linear'>{children}</a>
   },
 }
