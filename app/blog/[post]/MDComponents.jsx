@@ -37,6 +37,6 @@ export const mdxComponents = {
     )
   },
   a: ({ children, ...props}) => {
-    return <a {...props} target='_blank' className='underline inline-block hover:scale-105 transition ease-linear'>{children}</a>
+    return <a {...props} target='_blank' className='underline decoration-accent inline-block hover:scale-105 transition ease-linear'>{children}</a>
   },
 }
