@@ -32,7 +32,7 @@ export default function About() {
                   {name:'NextJS',
                    img:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg'},
                   {name:'TailwindCSS',
-                   img:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg'},].map(item =>
+                   img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'},].map(item =>
                     <div className="flex items-center gap-2 p-2 bg-blue-300/10 rounded-lg border-b-2 border-r rounded-br-xl border-primary ">
                       <img src={item.img} alt="" height='36' width='36'/>
                       <h4 className="text-2xl">{item.name}</h4>
@@ -41,7 +41,7 @@ export default function About() {
             <div className="flex flex-wrap gap-2 items-center text-accent">
               <h3 className="text-3xl font-semibold mr-2 xl:text-5xl">OTHERS</h3>
                 {[{name:'Prisma',
-                   img:'https://imgs.search.brave.com/dvw9-RU7yC3STgN8xuwpOtznz8bUdeZJZzwP5VU2OL8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/aWNvbi5jb20vZnJl/ZS1pY29uLWRvd25s/b2FkL3ByaXNtYV8x/LnN2Zw.svg'},
+                   img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg'},
                   {name:'MongoDB',
                    img:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'},
                   {name:'C++',
